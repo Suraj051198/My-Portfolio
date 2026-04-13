@@ -154,6 +154,52 @@
   letter-spacing: 0.3px;
 }
 
+@media (max-width: 576px) {
+  .footer {
+    padding: 2.5rem 1rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .backToTop {
+    top: -25px;
+  }
+
+  .topLink {
+    width: 45px;
+    height: 45px;
+  }
+
+  .topIcon {
+    font-size: 1.1rem;
+  }
+
+  .footerContent {
+    gap: 1.5rem;
+  }
+
+  .footerName {
+    font-size: 1.3rem;
+  }
+
+  .footerDescription {
+    font-size: 0.9rem;
+  }
+
+  .socialLinks {
+    gap: 1.2rem;
+  }
+
+  .socialIcon {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
 @media (min-width: 768px) {
   .footerContent {
     flex-direction: row;

@@ -281,3 +281,52 @@
     font-size: 0.95rem;
   }
 }
+
+/* Mobile Extreme - 576px and below */
+@media screen and (max-width: 576px) {
+  .hero {
+    padding: 0 1rem;
+    min-height: 80vh;
+  }
+
+  .heroContent {
+    padding: 1rem;
+  }
+
+  .heroH1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heroH2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroP {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .heroButtons {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaButton {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .scrollIndicator {
+    bottom: 1.5rem;
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+}

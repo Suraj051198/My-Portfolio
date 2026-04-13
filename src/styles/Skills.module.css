@@ -199,3 +199,59 @@
     font-size: 0.95rem;
   }
 }
+
+/* Mobile - 576px and below */
+@media screen and (max-width: 576px) {
+  .skills {
+    padding: 60px 1rem;
+  }
+
+  .sectionHeaderH2 {
+    font-size: 1.8rem;
+  }
+
+  .underline {
+    width: 80px;
+  }
+
+  .skillsContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skillCategory {
+    padding: 20px;
+  }
+
+  .skillCategoryH3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .skillsList {
+    gap: 15px;
+  }
+
+  .skillItem {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .skillIcon {
+    font-size: 1.4rem;
+    min-width: 35px;
+  }
+
+  .skillInfoH4 {
+    font-size: 0.9rem;
+  }
+
+  .skillProgressContainer {
+    height: 5px;
+  }
+
+  .skills::before,
+  .skills::after {
+    display: none;
+  }
+}
