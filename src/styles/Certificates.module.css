@@ -105,7 +105,7 @@
   transform: translateY(-3px);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .certificates {
     padding: 80px 1.5rem;
   }
@@ -124,44 +124,48 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .certificates {
-    padding: 60px 1rem;
+    padding: 50px 0.8rem;
   }
   
   .sectionHeaderH2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .underline {
+    width: 60px;
   }
   
   .certificatesContainer {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 12px;
   }
   
   .certificateCard {
-    padding: 20px;
+    padding: 15px;
   }
   
   .certificateIcon {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .certificateCardH3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .certificateProvider {
-    font-size: 0.85rem;
-    margin-bottom: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
   }
 
   .certificateDescription {
-    font-size: 0.85rem;
-    margin-bottom: 15px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
   }
 
   .certificateLink {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
   }
 }

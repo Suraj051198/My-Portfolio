@@ -204,7 +204,7 @@
 }
 
 /* Tablet - 992px and below */
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .aboutContent {
     flex-direction: column;
     gap: 40px;
@@ -220,7 +220,7 @@
 }
 
 /* Tablet - 768px and below */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .about {
     padding: 80px 1.5rem;
   }
@@ -230,11 +230,12 @@
   }
   
   .aboutContent {
+    flex-direction: column;
     gap: 30px;
   }
   
   .aboutImage {
-    min-width: 200px;
+    display: none;
   }
   
   .aboutTextH3 {
@@ -256,58 +257,74 @@
 }
 
 /* Mobile - 576px and below */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .about {
-    padding: 60px 1rem;
+    padding: 50px 0.8rem;
   }
   
   .sectionHeader {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .sectionHeaderH2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   
+  .underline {
+    width: 60px;
+  }
+
   .aboutContent {
-    gap: 20px;
+    gap: 0;
   }
   
   .aboutImage {
-    min-width: auto;
+    display: none;
   }
   
-  .imageContainer {
-    max-height: 300px;
+  .aboutText {
+    width: 100%;
   }
-  
+
   .aboutTextH3 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   
   .aboutTextP {
-    font-size: 0.85rem;
-    margin-bottom: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
   }
-  
-  .aboutHighlightsHeaderH4 {
-    font-size: 1rem;
-  }
-  
-  .aboutListLi {
-    font-size: 0.85rem;
+
+  .aboutHighlightsHeader {
+    margin-top: 8px;
     margin-bottom: 8px;
   }
-  
-  .aboutButtons {
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 15px;
+
+  .aboutHighlightsHeaderH4 {
+    font-size: 0.9rem;
   }
-  
+
+  .aboutList {
+    padding-left: 1.2rem;
+  }
+
+  .aboutListLi {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+
+  .aboutButtons {
+    gap: 8px;
+    margin-top: 10px;
+  }
+
   .aboutButton {
-    width: 100%;
-    padding: 10px 16px;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .about::before {
+    display: none;
   }
 }

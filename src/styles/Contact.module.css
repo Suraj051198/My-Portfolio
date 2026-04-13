@@ -179,7 +179,7 @@
   background-color: #0056b3;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .contactContainer {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -187,7 +187,7 @@
 }
 
 /* Tablet - 768px and below */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contact {
     padding: 80px 1.5rem;
   }
@@ -223,77 +223,87 @@
 }
 
 /* Mobile - 576px and below */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .contact {
-    padding: 60px 1rem;
+    padding: 50px 0.8rem;
   }
-  
+
   .sectionHeader {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .sectionHeaderH2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .underline {
+    width: 60px;
   }
   
   .contactContainer {
-    gap: 25px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .contactInfo {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
   
   .contactCard {
-    padding: 15px 10px;
+    padding: 12px 10px;
     border-radius: 8px;
   }
   
   .contactIcon {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-  
-  .contactCardH3 {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     margin-bottom: 8px;
   }
   
+  .contactCardH3 {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  
   .contactCardP {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .contactCardA {
+    font-size: 0.7rem;
   }
   
   .contactFormContainer {
-    padding: 20px 15px;
-    border-radius: 10px;
+    padding: 15px 12px;
+    border-radius: 8px;
   }
   
   .contactFormContainerH3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
   
   .contactForm {
-    gap: 15px;
+    gap: 12px;
   }
   
   .formGroupLabel {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   
   .formGroupInput, 
   .formGroupTextarea {
-    padding: 10px 12px;
-    font-size: 0.9rem;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
   }
   
   .formGroupTextarea {
-    min-height: 100px;
+    min-height: 80px;
   }
   
   .submitButton {
-    padding: 10px 16px;
-    font-size: 0.9rem;
+    padding: 8px 12px;
+    font-size: 0.85rem;
   }
 }

@@ -173,7 +173,7 @@
   box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .skills {
     padding: 80px 1.5rem;
   }
@@ -201,53 +201,58 @@
 }
 
 /* Mobile - 576px and below */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .skills {
-    padding: 60px 1rem;
+    padding: 50px 0.8rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 20px;
   }
 
   .sectionHeaderH2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .underline {
-    width: 80px;
+    width: 60px;
   }
 
   .skillsContainer {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 12px;
   }
 
   .skillCategory {
-    padding: 20px;
+    padding: 12px;
   }
 
   .skillCategoryH3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
   }
 
   .skillsList {
-    gap: 15px;
+    gap: 10px;
   }
 
   .skillItem {
-    gap: 10px;
-    padding: 5px;
+    gap: 8px;
+    padding: 3px;
   }
 
   .skillIcon {
-    font-size: 1.4rem;
-    min-width: 35px;
+    font-size: 1.2rem;
+    min-width: 30px;
   }
 
   .skillInfoH4 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .skillProgressContainer {
-    height: 5px;
+    height: 4px;
   }
 
   .skills::before,
