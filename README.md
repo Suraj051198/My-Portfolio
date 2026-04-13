@@ -1,53 +1,147 @@
-# Getting Started with Create React App
+# Suraj Sonawane - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with **React 19** and **Vite 5**.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Fast Development** - Vite provides instant server start and HMR (Hot Module Replacement)
+- **Modern React** - React 19 with functional components and hooks
+- **Responsive Design** - Mobile-first, fully responsive layout
+- **CSS Modules** - Scoped styling with CSS modules
+- **Smooth Scrolling** - React Scroll integration for smooth navigation
+- **Icon Library** - React Icons for beautiful SVG icons
+- **Production Ready** - Optimized build for deployment
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── App.jsx              # Main application component
+├── main.jsx             # Vite entry point
+├── components/          # React components
+│   ├── Header.js
+│   ├── Hero.js
+│   ├── About.js
+│   ├── Skills.js
+│   ├── Projects.js
+│   ├── Certificates.js
+│   ├── Contact.js
+│   └── Footer.js
+└── styles/
+    ├── global.css
+    ├── Header.module.css
+    ├── Hero.module.css
+    ├── About.module.css
+    ├── Skills.module.css
+    ├── Projects.module.css
+    ├── Certificates.module.css
+    ├── Contact.module.css
+    └── Footer.module.css
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Installation
 
-### `npm test`
+1. **Clone or setup the project:**
+   ```bash
+   cd My-Portfolio
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+## 💻 Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will open at `http://localhost:3000` with:
+- Hot Module Replacement (HMR) for instant updates
+- Fast refresh for component changes
+- Native ES modules
 
-### `npm run eject`
+## 📦 Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create an optimized production build:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The built files will be in the `dist/` directory, ready for deployment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👀 Preview Production Build
 
-## Learn More
+Preview the production build locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run preview
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📋 Available Scripts
 
-### Code Splitting
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Tech Stack
+
+- **React 19.1.0** - UI library
+- **Vite 5.0.8** - Build tool and dev server
+- **React Scroll 1.9.3** - Smooth scrolling
+- **React Icons 5.5.0** - Icon library
+- **CSS Modules** - Component-scoped styling
+
+## 🚀 Deployment
+
+The `dist/` folder is ready to be deployed to any static hosting service:
+
+- **Vercel** - `vercel deploy`
+- **Netlify** - Drag and drop `dist` folder
+- **AWS S3 + CloudFront**
+- **GitHub Pages**
+- **Any other static hosting**
+
+## ✍️ Customization
+
+### Adding a New Section
+
+1. Create a new component in `src/components/`
+2. Add the component to `src/App.jsx`
+3. Create corresponding CSS module in `src/styles/`
+4. Add navigation link to the Header component
+
+### Modifying Styles
+
+All CSS modules are in `src/styles/` using the naming convention:
+- `ComponentName.module.css`
+
+Global styles are in `src/styles/global.css`
+
+## 📝 License
+
+This project is open source and available for personal and commercial use.
+
+## 👨‍💻 Developer
+
+**Suraj Sonawane**
+- MERN Stack Developer
+- Location: Pune, India
+- GitHub: [Suraj051198](https://github.com/Suraj051198)
+- LinkedIn: [sonawane-suraj](https://www.linkedin.com/in/sonawane-suraj/)
+- Email: surajsonawane172@gmail.com
+
+---
+
+**Built with ❤️ using React & Vite**
+
 
 ### Analyzing the Bundle Size
 
