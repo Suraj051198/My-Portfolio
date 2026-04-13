@@ -1,0 +1,299 @@
+/* Contact.module.css */
+.contact {
+  padding: 100px 2rem;
+  background-color: #fff;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionHeaderH2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.contactCard {
+  background-color: #f8f9fa;
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-5px);
+}
+
+.contactIcon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.contactCardH3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contactCardP {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.contactCardA {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactCardA:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.contactFormContainer {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contactFormContainerH3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroupLabel {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.formGroupInput, 
+.formGroupTextarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroupInput:focus, 
+.formGroupTextarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.submitButton:disabled {
+  background-color: #b3d7ff;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.successMessageP {
+  font-size: 1.1rem;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.successMessageButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.successMessageButton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 992px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Tablet - 768px and below */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 80px 1.5rem;
+  }
+  
+  .sectionHeaderH2 {
+    font-size: 2rem;
+  }
+  
+  .contactFormContainer {
+    padding: 30px 20px;
+  }
+  
+  .contactInfo {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+  }
+  
+  .contactCard {
+    padding: 20px 15px;
+  }
+  
+  .contactIcon {
+    font-size: 1.6rem;
+  }
+  
+  .contactCardH3 {
+    font-size: 0.95rem;
+  }
+  
+  .contactCardP {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile - 576px and below */
+@media screen and (max-width: 576px) {
+  .contact {
+    padding: 60px 1rem;
+  }
+  
+  .sectionHeader {
+    margin-bottom: 30px;
+  }
+  
+  .sectionHeaderH2 {
+    font-size: 1.6rem;
+  }
+  
+  .contactContainer {
+    gap: 25px;
+  }
+  
+  .contactInfo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .contactCard {
+    padding: 15px 10px;
+    border-radius: 8px;
+  }
+  
+  .contactIcon {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .contactCardH3 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .contactCardP {
+    font-size: 0.75rem;
+  }
+  
+  .contactFormContainer {
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+  
+  .contactFormContainerH3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contactForm {
+    gap: 15px;
+  }
+  
+  .formGroupLabel {
+    font-size: 0.85rem;
+  }
+  
+  .formGroupInput, 
+  .formGroupTextarea {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .formGroupTextarea {
+    min-height: 100px;
+  }
+  
+  .submitButton {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
